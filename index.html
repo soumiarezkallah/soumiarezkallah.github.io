@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta charset="utf-8">
+<!-- Latest compiled and minified CSS -->
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link rel="stylesheet" href="font_awesome/font_awesome/css/font-awesome.min.css">
+
+
+<style>
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-container .filter {
+ 
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+.aide{
+	margin-right : 20px;
+}
+
+.bnjr{
+	margin-bottom : 200px;
+}
+
+.formation{
+	background-image : url("university.jpg");
+    padding-bottom : 20%;
+    background-attachment: fixed;
+}
+
+
+.aide{
+ margin-right: -200px;
+}
+
+.fond{
+	background-image: url("fff.jpg");
+	background-attachment: fixed;
+	background-size: 100%;
+	padding-top: 20px;
+  text-align: center;
+	border-style: inset;
+  font-style: oblique;
+  font-size: 20px;
+}
+.fond1{
+  background-image: url("pper.jpg") ;
+  background-size: 100%;
+  padding-bottom: 5%;
+  text-align: center;
+  border-style: outset;
+  font-style: oblique;
+  font-size: 20px;
+  margin-top: 0%;
+}
+.fond2{
+  background-image: url("lang.jpg");
+  background-size: 50% 100%;
+  font-size: 20px;
+  padding-top: 0px;
+  text-align: center;
+  border-style: outset;
+
+  font-style: oblique;
+
+}
+.fond3{
+  background-image: url("co.png");
+  background-size: 100% 100%;
+  font-size: 20px;
+  padding-top: 0px;
+  text-align: center;
+  font-style: oblique;
+  border-style: outset;
+}
+
+h3{
+  font-size: 4rem;
+  color:#F30B69;
+}
+.body{
+  font: normal 16px /1.5px
+    "HElvetica Neue";
+    sans-serif;
+  background: #456990;
+  color:#fff;
+  overflow-x: hidden;
+  padding-bottom: 50px; 
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content:'';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #456999;
+}
+
+.timeline ul li div::before{
+  content:'';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div{
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before{
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F30B69 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div{
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before{
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent #F30B69 transparent transparent;
+}
+.im{
+  background-image: url("pe.jpg");
+  background-size: 100% 100%;
+   border-style: outset;
+
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="aide" class="navbar-brand" href="#"><img class="aide" src="ph2.png" width="30%"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Acceuil<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#fo">Formations<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#ex">Expériences professionelle</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#per">Personnalité<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#lang">Langues</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#cont">Contactez-moi<span class="sr-only"></span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Rechercher" aria-label="Search">
+      <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Rechercher</button>
+    </form>
+  </div>
+</nav>
+<div class="row">
+  <div class="video video-container">
+        <video autoplay loop class="fillWidth">
+            <source src="cv.mp4" type="video/mp4" />Votre navigateur ne supporte pas cette vidéo
+        </video>
+    </div>
+</div>
+
+<div class="fond content">
+<div class="row">
+<div class="col-md-12"><br><b id="fo"><h3>Formations</h3></b></div>
+<br><br><br><br><br><br>
+
+       <div class="col-md-4">
+       	 <p id="2015">2015</p>
+       </div>
+       <div class="col-md-4">
+       	 BAC Scientifique
+       </div>
+       <div class="col-md-4">
+       Zahouel Amer
+       	</div>
+</div>
+</div>
+<div class="fond content">
+<div class="row">
+      <div class="col-md-4">
+      <p id="2016">2016</p>
+      </div>
+      <div class="col-md-4">1 ère année licence MI
+      </div>
+      <div class="col-md-4">USTHB
+      </div>
+</div>
+</div>
+<div class="fond content">
+<div class="row">
+      <div class="col-md-4">
+      <p id="2017">2017</p>
+      </div><br><br><br><br>
+      <div class="col-md-4"><img src="ph4.png" width="110px" height="80px">
+      </div><br>
+      <div class="col-md-4">USTHB
+</div>
+</div>
+<br><br>
+
+<div class="im content">
+<section class="timeline">
+<div  class="col-md-12"><br><br><b id="ex"><h3>Expérience Professionelle</h3></b></div>
+<br>
+  <ul>
+      <li>
+         <div>
+              <time>Août 2015</time>
+              <h1>Formation chez Berlitz</h1>
+                 J'ai appris l'englais
+         </div>
+      </li>
+
+ 
+ 
+      <li>
+         <div>
+              <time>Août 2016</time>
+              <h1>Formation chez Coca Cola</h1>
+                 J'ai appris de la programation industrielle
+         </div>
+      </li>
+  
+
+  
+      <li>
+         <div>
+              <time>Août 2017</time>
+              <h1>Formation chez Madrassaty</h1>
+                 Je me suis développée en Web 
+         </div>
+      </li>
+  </ul> 
+</section>
+</div>
+
+
+
+
+<div class="fond1 content">
+<div class="row">
+    <div  class="col-md-12"><br><b id="per"><h3>Personnalité</h3></b></div>
+    <br><br><br><br><br>
+       <div class="col-md-3">Travailleuse</div>
+       <div class="col-md-3">Sérieuse</div>
+       <div class="col-md-3">Respectueuse</div>
+       <div class="col-md-3">Attentive</div>
+      <br><br>
+    <div  class="col-md-12"></div>
+       <div class="col-md-4">Honnête</div>
+       <div class="col-md-4">Digne de Confiance</div>
+       <div class="col-md-4">Motivée</div>
+       
+</div>
+</div>
+
+
+<div class="fond2 content">
+<div class="row">
+   <div class="col-md-12"><br><b id="lang"><h3>Langues</h3></b></div>
+   <br><br><br><br><br><br>
+
+   <div class="col-md-3">Amazigh<br>
+   <img src="amaz.jpg" width="75%" height="50%">
+   <div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 60%; height: 1px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 60%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+   </div>
+
+   <div class="col-md-3">Arab<br>
+   <img src="ar.jpg" width="50%" height="50%">
+   <div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 100%; height: 1px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 100%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+   </div>
+
+   <div class="col-md-3">Français<br>
+   <img src="fra.jpg" width="50%" height="50%">
+   <div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 90%; height: 1px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 90%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+   </div>
+
+   <div class="col-md-3">English<br>
+   <img src="en.jpg" width="75%" height="50%">
+   <div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 60%; height: 1px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" style="width:60%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+   </div>
+</div>
+</div>
+
+<div class="fond3 content">
+<div class="row">
+   <div class="col-md-12"><br><b id="cont"><h3>Contactez-moi<h3></b></div>
+   <br><br><br><br><br><br>
+
+<div class="col-md-4"><i class="fa fa-facebook" aria-hidden="true"></i>REZKALLAH Soumia</div> 
+
+<div class="col-md-4"><i class="fa fa-user-circle" aria-hidden="true"></i>00213 553 87 50 30</div>
+
+<div class="col-md-4"><i class="fa fa-envelope" aria-hidden="true"></i>soumia.rezkallah@gmail.com</div> 
+</div>
+</div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<script>
+$( document ).ready(function(){
+
+    VideoContainer();
+
+});
+
+function VideoContainer(){
+
+    var height = $(window).height() + 5;
+    var unitHeight = parseInt(height) + 'px';
+    $('.video').css('height',unitHeight);
+
+}
+
+</script>
+</body>
+</html>
